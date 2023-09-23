@@ -1,9 +1,12 @@
 (function() {
-    const wallets = [
-        '0x....',
-        '0x....',
-        '0x....',
-    ];
+    const wallets = `
+0x50567bb4528361d80d818aa3c6173a172f0519fc5ab96e734c439c1674c675a
+0x5f0480f1b8f52f4a887e037392b20064fe40592b0c4486f0b1e0978b3258bd7
+0x7ffa92713257244cfa5e844c1570ce3c25092f3b55fca4f182e6a0aa4551d07
+0x1264a58fe6637144660f00ef9c86ec640e992ffd13770063bae390afc48b06e
+0x329f8636545fa53c744f489e80e19d5be12d6426a9c68e46ce2eb8547059c3f
+     `.split("\n").filter(element => element);
+    
     const walletSelectors = [];
 
     for (let i = 3; i <= 98; i += 5) {
